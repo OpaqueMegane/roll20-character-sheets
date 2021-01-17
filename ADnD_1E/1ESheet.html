@@ -253,7 +253,21 @@
 						<td></td>
 					</tr>
 				</table>
+				<!--
+			
+				-->
 				<table class="sheet-sect sheet-border" style="margin-top:5px;">
+				    <tr>
+                        <td class="sheet-text-large sheet-right">#Attacks Per Round:</td>
+					    <td>
+					        <input type="text" class="sheet-input-small" name="attr_atk_per_round_num" title="@{atk_per_round_num}" value="1" />
+					        /
+					        <input type="text" class="sheet-input-small" name="attr_atk_per_round_denom" title="@{atk_per_round_denom}" value="1" />
+                        </td>
+                        
+                        <td></td>
+						<td></td>
+                    </tr>
 					<tr>
 						<td class="sheet-text-large sheet-right">Movement:</td>
 						<td></td>
@@ -296,6 +310,22 @@
 					</tr>
 				</table>	
 				<hr>
+			</div>
+			<div class="sheet-monsters">
+			    <div class="sheet-header">MONSTER INFO</div>
+			    <input type="checkbox" class="sheet-sect-show" title="@{monsters-info-show}" name="attr_monsters-info-show" value="1" style="width: 115px; margin: 0 -20px 0 -85px;" checked="checked" /><span></span>
+			        <div class="sheet-sect">
+			            <table class="sheet-sect sheet-center">
+                        <tr>
+							<td style="width:15%;">Hit Dice: <input type="text" class="sheet-input-medium" name="attr_creature_hit_dice" title="@{creature_hit_dice}" value="1" /></td>
+							<td style="width:15%;">Treasure Type: <input type="text" class="sheet-input-medium" name="attr_treasure_type" title="@{treasure_type}" value="" /></td>
+							<td style="width:15%;">Magic&nbsp;Resistance: <input type="text" class="sheet-input-medium" name="attr_creature_magic_resistance" title="@{creature_magic_resistance}" value="Nil" /></td>
+							<td style="width:15%;">Intelligence: <input type="text" class="sheet-input-medium" name="attr_creature_intelligence" title="@{creature_intelligence}" value="" /></td>
+							<td style="width:15%;">Size: <input type="text" class="sheet-input-medium" name="attr_creature_size" title="@{creature_size}" value="M" /></td>
+							
+						</tr>
+						</table>
+			        </div>
 			</div>
 			<div class="sheet-weapons">
 				<div class="sheet-header">WEAPONS</div>
